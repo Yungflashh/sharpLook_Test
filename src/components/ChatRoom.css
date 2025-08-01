@@ -1,0 +1,108 @@
+.chatroom {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.incoming-call {
+  background: #fff3cd;
+  padding: 15px;
+  border: 1px solid #ffeeba;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 300px;
+  margin-bottom: 15px;
+}
+
+.remote-video,
+.local-video,
+.screen-preview {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.local-video {
+  height: 90px;
+  width: 120px;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.screen-preview {
+  bottom: 10px;
+  right: 10px;
+  height: 120px;
+  width: 160px;
+  z-index: 2;
+  border: 2px solid #3c9ae2;
+  border-radius: 8px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.controls button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  background: #1e824c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #145a32;
+}
+
+.messages {
+  background: #f4f4f4;
+  padding: 10px;
+  height: 180px;
+  overflow-y: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.message {
+  margin-bottom: 6px;
+}
+
+.send-box {
+  display: flex;
+  gap: 10px;
+}
+
+.send-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.send-box button {
+  background: #007aff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
